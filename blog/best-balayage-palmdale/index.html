@@ -1,20 +1,17 @@
-
-import os
-
-blog_template = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title} | Beauty Salon News</title>
-    <meta name="description" content="{description}">
+    <title>Why We Are Voted Best Balayage in Palmdale | Beauty Salon News</title>
+    <meta name="description" content="Looking for the perfect sun-kissed blonde or rich dimensional brunette? See why Palmdale residents trust Beauty Salon for their color transformations.">
     
     <!-- Open Graph -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.beautysalonav.com/blog/{slug}/">
-    <meta property="og:title" content="{title}">
-    <meta property="og:description" content="{description}">
+    <meta property="og:url" content="https://www.beautysalonav.com/blog/best-balayage-palmdale/">
+    <meta property="og:title" content="Why We Are Voted Best Balayage in Palmdale">
+    <meta property="og:description" content="Looking for the perfect sun-kissed blonde or rich dimensional brunette? See why Palmdale residents trust Beauty Salon for their color transformations.">
     <meta property="og:image" content="/images/logo.png">
 
     <!-- Fonts -->
@@ -58,8 +55,8 @@ blog_template = """<!DOCTYPE html>
     <!-- Page Hero -->
     <section class="page-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/salon-hero-bg.jpg'); padding: 80px 0; background-size: cover; background-position: center;">
         <div class="container" style="text-align: center;">
-            <span style="color: #b0e0e6; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">{category}</span>
-            <h1 style="color: white; font-size: 3rem; margin-top: 10px; max-width: 900px; margin-left: auto; margin-right: auto;">{title}</h1>
+            <span style="color: #b0e0e6; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Local Spotlight: Palmdale</span>
+            <h1 style="color: white; font-size: 3rem; margin-top: 10px; max-width: 900px; margin-left: auto; margin-right: auto;">Why We Are Voted Best Balayage in Palmdale</h1>
             <p style="color: rgba(255,255,255,0.9); margin-top: 15px;">Published by Beauty Salon</p>
         </div>
     </section>
@@ -69,10 +66,21 @@ blog_template = """<!DOCTYPE html>
         <div class="container" style="max-width: 800px;">
             <div class="blog-content" style="line-height: 1.8; color: #444; font-size: 1.1rem;">
                 <p class="lead" style="font-size: 1.3rem; color: #F4B6C2; font-weight: 600; margin-bottom: 30px;">
-                    {lead_text}
+                    Finding a colorist who understands the 'lived-in' look is hard. At Beauty Salon in Palmdale, our balayage specialists are trained in the latest hand-painting techniques.
                 </p>
                 
-                {content_body}
+                
+            <h2>The Art of Hand-Painted Color</h2>
+            <p>Unlike traditional foils, balayage allows for a softer grow-out line. This is perfect for the Palmdale lifestyle—low maintenance but high impact.</p>
+            
+            <h3 style="color: #F4B6C2; margin-top: 40px; margin-bottom: 20px;">Client Transformation Story</h3>
+            <p>Sarah from West Palmdale came in with brassy, over-processed bands. Our corrective balayage session restored her dimension while maintaining the integrity of her hair.</p>
+            
+            <img src="/images/hair-coloring.jpg" alt="Balayage Transformation" style="width:100%; border-radius: 8px; margin: 20px 0;">
+
+            <h3>Book Your Palmdale Consultation</h3>
+            <p>Ready for your glow-up? We offer free 15-minute consultations to discuss your hair goals.</p>
+        
 
                 <div style="background: #FFF5F7; padding: 30px; border-left: 5px solid #F4B6C2; margin: 40px 0; border-radius: 4px;">
                     <h3 style="margin-top: 0; color: #D4AF37;">Ready for a Transformation?</h3>
@@ -83,7 +91,7 @@ blog_template = """<!DOCTYPE html>
                 <hr style="margin: 50px 0; border: 0; border-top: 1px solid #eee;">
                 
                 <div style="font-size: 0.9rem; color: #666;">
-                    <p><strong>Tags:</strong> {tags}</p>
+                    <p><strong>Tags:</strong> Balayage, Palmdale, Hair Color, Local Expert</p>
                     <p><a href="/blog/">&larr; Back to All Articles</a></p>
                 </div>
             </div>
@@ -140,99 +148,3 @@ blog_template = """<!DOCTYPE html>
     <script src="/js/script.js"></script>
 </body>
 </html>
-"""
-
-articles = [
-    {
-        "slug": "best-balayage-palmdale",
-        "title": "Why We Are Voted Best Balayage in Palmdale",
-        "category": "Local Spotlight: Palmdale",
-        "description": "Looking for the perfect sun-kissed blonde or rich dimensional brunette? See why Palmdale residents trust Beauty Salon for their color transformations.",
-        "lead_text": "Finding a colorist who understands the 'lived-in' look is hard. At Beauty Salon in Palmdale, our balayage specialists are trained in the latest hand-painting techniques.",
-        "tags": "Balayage, Palmdale, Hair Color, Local Expert",
-        "content_body": '''
-            <h2>The Art of Hand-Painted Color</h2>
-            <p>Unlike traditional foils, balayage allows for a softer grow-out line. This is perfect for the Palmdale lifestyle—low maintenance but high impact.</p>
-            
-            <h3 style="color: #F4B6C2; margin-top: 40px; margin-bottom: 20px;">Client Transformation Story</h3>
-            <p>Sarah from West Palmdale came in with brassy, over-processed bands. Our corrective balayage session restored her dimension while maintaining the integrity of her hair.</p>
-            
-            <img src="/images/hair-coloring.jpg" alt="Balayage Transformation" style="width:100%; border-radius: 8px; margin: 20px 0;">
-
-            <h3>Book Your Palmdale Consultation</h3>
-            <p>Ready for your glow-up? We offer free 15-minute consultations to discuss your hair goals.</p>
-        '''
-    },
-    {
-        "slug": "wedding-makeup-lancaster-ca",
-        "title": "Wedding Makeup Tips for Lancaster Brides",
-        "category": "Local Spotlight: Lancaster",
-        "description": "Getting married in the Antelope Valley? Here are our top tips for long-lasting bridal makeup that withstands the High Desert heat and wind.",
-        "lead_text": "Lancaster weddings are beautiful, but the desert elements can be tough on makeup. Our bridal specialists share their secrets for a flawless look that lasts from the ceremony to the reception.",
-        "tags": "Weddings, Lancaster, Bridal Makeup, Beauty Tips",
-        "content_body": '''
-            <h2>Prep is Key</h2>
-            <p>The dry Lancaster air means hydration is non-negotiable. We start every bridal application with a moisture-locking primer suited for your skin type.</p>
-            
-            <h3 style="color: #F4B6C2; margin-top: 40px; margin-bottom: 20px;">Wind-Proofing Your Look</h3>
-            <p>We use high-definition setting powders and heavy-duty setting sprays to ensure your look stays put, even during those breezy outdoor photoshoots at the Hellenic Center or the Poppy Reserve.</p>
-
-            <img src="/images/makeup.jpg" alt="Bridal Makeup Application" style="width:100%; border-radius: 8px; margin: 20px 0;">
-
-            <h3>Bridal Packages</h3>
-            <p>We offer on-site and in-salon bridal packages for you and your entire bridal party.</p>
-        '''
-    },
-    {
-        "slug": "quartz-hill-skincare-specials",
-        "title": "Why Quartz Hill Locals Love Our Hydrafacials",
-        "category": "Local Spotlight: Quartz Hill",
-        "description": "Combat the desert dryness with our signature hydration treatments. See why our Quartz Hill clients book this service monthly.",
-        "lead_text": "Living in Quartz Hill means enjoying beautiful views but dealing with dry air. Our hydration-focused facials are designed specifically to restore the moisture barrier of High Desert skin.",
-        "tags": "Skincare, Quartz Hill, Facials, Hydration",
-        "content_body": '''
-            <h2>The Desert Defense Facial</h2>
-            <p>Our signature treatment includes a double cleanse, enzyme exfoliation, and a hyaluronic acid infusion that penetrates deep into the skin layers.</p>
-            
-            <h3 style="color: #F4B6C2; margin-top: 40px; margin-bottom: 20px;">Results You Can Feel</h3>
-            <p>Clients report immediate plumping and a reduction in fine lines. It's the perfect reset button after a week of Santa Ana winds.</p>
-
-            <img src="/images/skincare.jpg" alt="Hydrating Facial" style="width:100%; border-radius: 8px; margin: 20px 0;">
-
-            <h3>Exclusive Resident Offer</h3>
-            <p>Mention this post to receive a complimentary lip treatment with your first facial booking.</p>
-        '''
-    }
-]
-
-def generate_articles():
-    base_dir = "blog"
-    if not os.path.exists(base_dir):
-        os.makedirs(base_dir)
-        
-    for article in articles:
-        # Create directory
-        article_dir = os.path.join(base_dir, article['slug'])
-        if not os.path.exists(article_dir):
-            os.makedirs(article_dir)
-            
-        # Create HTML
-        html_content = blog_template.format(
-            title=article['title'],
-            description=article['description'],
-            slug=article['slug'],
-            category=article['category'],
-            lead_text=article['lead_text'],
-            content_body=article['content_body'],
-            tags=article['tags']
-        )
-        
-        # Write file
-        file_path = os.path.join(article_dir, "index.html")
-        with open(file_path, "w") as f:
-            f.write(html_content)
-        
-        print(f"Generated: {file_path}")
-
-if __name__ == "__main__":
-    generate_articles()
