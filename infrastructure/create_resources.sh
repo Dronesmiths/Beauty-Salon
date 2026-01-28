@@ -3,7 +3,7 @@
 # Configuration
 PROFILE="mediusa"
 REGION="us-east-1"
-BUCKET_PREFIX="high-desert-solar-cleaners"
+BUCKET_PREFIX="beauty-salon-av"
 TIMESTAMP=$(date +%s)
 BUCKET_NAME="${BUCKET_PREFIX}-${TIMESTAMP}"
 CONFIG_FILE="../aws_config.json"
@@ -12,7 +12,7 @@ CONFIG_FILE="../aws_config.json"
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-echo -e "${GREEN}Starting Infrastructure Provisioning for High Desert Solar Cleaners...${NC}"
+echo -e "${GREEN}Starting Infrastructure Provisioning for Beauty Salon...${NC}"
 
 # 1. Create S3 Bucket
 echo "Creating S3 Bucket: $BUCKET_NAME..."
@@ -61,7 +61,7 @@ ORIGIN_DOMAIN="${BUCKET_NAME}.s3-website-${REGION}.amazonaws.com"
 
 # Create Distribution
 # Note: CallerReference ensures idempotency
-CALLER_REF="high-desert-${TIMESTAMP}"
+CALLER_REF="beauty-salon-${TIMESTAMP}"
 
 DIST_CONFIG='{
     "CallerReference": "'"$CALLER_REF"'",
@@ -113,7 +113,7 @@ DIST_CONFIG='{
        "Quantity": 0
     },
     "Enabled": true,
-    "Comment": "High Desert Solar Cleaners"
+    "Comment": "Beauty Salon"
 }'
 
 # We need to write the config to a temp file because CLI argument parsing for JSON is tricky

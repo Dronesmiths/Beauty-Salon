@@ -131,15 +131,76 @@ blog_template = f"""<!DOCTYPE html>
 
 articles = [
     {
-        "slug": "welcome-to-our-new-site",
-        "title": "Welcome to Our New Professional Website",
-        "category": "Company News",
-        "description": "We are excited to launch our new digital home to better serve our clients.",
-        "lead_text": "Our commitment to excellence now has a digital home that reflects our standards.",
-        "tags": "News, Launch, Professional",
+        "slug": "welcome-to-beauty-salon-av",
+        "title": "Welcome to Beauty Salon: Antelope Valley's Premier Beauty Destination",
+        "category": "Salon News",
+        "description": "We are thrilled to unveil our new identity and expanded service menu for the Antelope Valley community.",
+        "lead_text": "From expert color corrections to luxurious spa treatments, Beauty Salon is redefining self-care in Palmdale and Lancaster. Step inside our new digital home.",
+        "tags": "Grand Opening, Hair, Skincare, Antelope Valley",
         "content_body": '''
-            <h2>Commitment to Quality</h2>
-            <p>Our new website is designed to provide you with easy access to our services, expert advice via our blog, and a seamless way to get in touch for your next project.</p>
+            <h2>A New Era of Beauty</h2>
+            <p>Welcome to <strong>Beauty Salon</strong>. Formerly known for our precise service and dedication, we have undergone a complete transformation to bring you a full-service beauty experience right here in the High Desert.</p>
+            
+            <h3>Expanded Services</h3>
+            <p>We are no longer just about haircuts. Our new service menu includes:</p>
+            <ul>
+                <li><strong>Custom Color & Balayage:</strong> Our specialists use premium products to achieve vibrant, lasting results.</li>
+                <li><strong>Spa-Grade Skincare:</strong> Rejuvenate your skin with our signature facials and chemical peels.</li>
+                <li><strong>Beauty Bar:</strong> Lash lifts, brow lamination, and event makeup to get you ready for any occasion.</li>
+            </ul>
+
+            <h3>Why the Change?</h3>
+            <p>We listened to our clients. You wanted a one-stop destination where trust and quality meet luxury. Our rebranded salon offers a serene atmosphere where you can relax and feel pampered.</p>
+
+            <img src="/images/salon-hero-bg.jpg" alt="Beauty Salon Interior" style="width:100%; border-radius: 8px; margin: 20px 0;">
+
+            <p>Explore our new site, check out our service pages, and book your appointment today. We can't wait to see you.</p>
+        '''
+    },
+    {
+        "slug": "hair-color-trends-2026",
+        "title": "Top Hair Color Trends Taking Over 2026",
+        "category": "Hair Trends",
+        "description": "Discover the hottest hair colors of the year, from expensive brunettes to cowgirl copper.",
+        "lead_text": "Thinking of a new look? This year is all about warmth, dimension, and healthy shine. Here are the top trends our stylists are loving.",
+        "tags": "Hair Color, Balayage, 2026 Trends",
+        "content_body": '''
+            <h2>1. Expensive Brunette</h2>
+            <p>Gone are the flat, dark colors. "Expensive Brunette" is all about rich, glossy depth. Think chocolate tones mixed with subtle caramel lowlights that catch the light perfectly.</p>
+
+            <h2>2. Cowgirl Copper</h2>
+            <p>Redheads are having a moment. This vibrant, warm copper shade is flattering on many skin tones and adds a bold statement to your look. It requires maintenance, but the results are stunning.</p>
+
+            <img src="/images/hair-coloring.jpg" alt="Hair Coloring Service" style="width:100%; border-radius: 8px; margin: 20px 0;">
+
+            <h2>3. Lived-In Blonde</h2>
+            <p>High-maintenance roots are out. The lived-in blonde look uses a root smudge and seamless balayage to allow for a natural grow-out, meaning fewer trips to the salon without sacrificing that bright, sun-kissed vibe.</p>
+
+            <h3>Maintain Your Color</h3>
+            <p>No matter which trend you choose, home care is key. Ask our stylists about our color-safe shampoos and deep conditioning treatments to keep your new shade looking fresh.</p>
+        '''
+    },
+    {
+        "slug": "benefits-of-monthly-facials",
+        "title": "Why Monthly Facials Are More Than Just a Treat",
+        "category": "Skincare Advice",
+        "description": "Understand the long-term benefits of professional facials for anti-aging and acne prevention.",
+        "lead_text": "Skincare is a journey, not a destination. While a daily routine is crucial, professional treatments provide deep exfoliation and hydration that products alone can't match.",
+        "tags": "Skincare, Facials, Anti-Aging, Wellness",
+        "content_body": '''
+            <h2>Deep Cleansing & Extraction</h2>
+            <p>Even with great washing, pores can become clogged. Professional extractions remove buildup safely, preventing breakouts and refining pore size.</p>
+
+            <h2>Increased Circulation</h2>
+            <p>Facial massage isn't just relaxing—it boosts blood flow to the skin cells. This brings oxygen and nutrients to the surface, giving you that immediate "post-facial glow."</p>
+
+            <img src="/images/skincare.jpg" alt="Relaxing Facial Treatment" style="width:100%; border-radius: 8px; margin: 20px 0;">
+
+            <h2>Anti-Aging Benefits</h2>
+            <p>Treatments involving exfoliation, microdermabrasion, or chemical peels stimulate cell turnover and collagen production. Over time, this reduces the appearance of fine lines and improves skin texture.</p>
+
+            <h3>Book Your Glow</h3>
+            <p>Ready to invest in your skin? Our licensed estheticians can create a customized plan for you. Schedule your consultation today.</p>
         '''
     }
 ]
