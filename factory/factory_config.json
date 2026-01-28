@@ -1,0 +1,35 @@
+{
+    "client": {
+        "name": "Beauty Salon",
+        "phone": "6614984444",
+        "email": "contact@beautysalonav.com",
+        "address_city": "Palmdale",
+        "address_state": "CA",
+        "domain": "beautysalon.com"
+    },
+    "brand": {
+        "primary_color": "#F4B6C2",
+        "secondary_color": "#D4AF37",
+        "font_heading": "Poppins",
+        "font_body": "Open Sans"
+    },
+    "aws": {
+        "bucket_name": "beauty-salon-av",
+        "region": "us-east-1",
+        "cloudfront_id": "placeholder",
+        "profile": "mediusa"
+    },
+    "seo": {
+        "primary_keywords": [
+            "Beauty Salon Antelope Valley",
+            "Haircuts",
+            "Makeup",
+            "Skincare"
+        ],
+        "service_area": [
+            "Palmdale",
+            "Lancaster",
+            "Antelope Valley"
+        ]
+    }
+}
