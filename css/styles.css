@@ -1,25 +1,36 @@
 :root {
     /* Beauty Salon Brand Palette */
-    --primary-blue: #5A2A4A; /* Deep Plum - replacing primary-blue for strong elements */
-    --primary-accent: #D4AF37; /* Champagne Gold */
-    --primary-yellow: #D4AF37; /* Champagne Gold */
-    --primary-green: #F4B6C2; /* Blush Pink - replacing green for soft accents */
-    
+    --primary-blue: #5A2A4A;
+    /* Deep Plum - replacing primary-blue for strong elements */
+    --primary-accent: #D4AF37;
+    /* Champagne Gold */
+    --primary-yellow: #D4AF37;
+    /* Champagne Gold */
+    --primary-green: #F4B6C2;
+    /* Blush Pink - replacing green for soft accents */
+
     /* Derived Colors */
-    --blue-dark: #1E1E1E; /* Charcoal Black */
-    --blue-light: #F7EDE2; /* Warm Nude - replacing light blue tint */
-    
+    --blue-dark: #1E1E1E;
+    /* Charcoal Black */
+    --blue-light: #F7EDE2;
+    /* Warm Nude - replacing light blue tint */
+
     --white: #FFFFFF;
-    --text-dark: #1E1E1E; /* Charcoal Black */
+    --text-dark: #1E1E1E;
+    /* Charcoal Black */
     --text-light: #F5F5F5;
-    --bg-light: #F7EDE2; /* Warm Nude - replacing light grey bg */
-    
-    --footer-dark: #1E1E1E; /* Charcoal Black */
-    
+    --bg-light: #F7EDE2;
+    /* Warm Nude - replacing light grey bg */
+
+    --footer-dark: #1E1E1E;
+    /* Charcoal Black */
+
     --primary-dark: var(--blue-dark);
-    
-    --hero-blue-1: rgba(90, 42, 74, 0.85); /* Deep Plum alpha */
-    --hero-blue-2: rgba(30, 30, 30, 0.85); /* Charcoal Black alpha */
+
+    --hero-blue-1: rgba(90, 42, 74, 0.85);
+    /* Deep Plum alpha */
+    --hero-blue-2: rgba(30, 30, 30, 0.85);
+    /* Charcoal Black alpha */
 
     /* Fonts */
     --font-heading: 'Poppins', sans-serif;
@@ -280,7 +291,7 @@ nav a.active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(51, 187, 255, 0.5) 0%, rgba(0, 136, 204, 0.4) 100%);
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(30, 30, 30, 0.6) 100%);
     z-index: 1;
 }
 
@@ -370,6 +381,10 @@ nav a.active {
     .blog-content h1,
     .page-hero h1 {
         font-size: 2.2rem !important;
+    }
+
+    .page-hero {
+        padding-top: 150px !important;
     }
 
     .blog-content h2 {
@@ -2993,4 +3008,35 @@ footer {
         width: 45px;
         height: 45px;
     }
+}
+/* Service Page List Styling */
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.service-list li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.service-list li strong {
+    color: var(--primary-dark);
+    font-weight: 700;
+}
+
+.service-list li::before {
+    content: "\f00c"; /* FontAwesome Check */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--primary-accent); /* Gold */
+    position: absolute;
+    left: 0;
+    top: 3px;
+    font-size: 0.9rem;
 }
