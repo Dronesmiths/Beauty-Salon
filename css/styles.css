@@ -1111,7 +1111,7 @@ nav a.active {
 
 /* Footer */
 footer {
-    background-color: var(--primary-dark);
+    background-color: var(--footer-dark);
     color: var(--white);
     padding: 60px 0 0;
     text-align: center;
@@ -3009,6 +3009,7 @@ footer {
         height: 45px;
     }
 }
+
 /* Service Page List Styling */
 .service-list {
     list-style: none;
@@ -3031,12 +3032,142 @@ footer {
 }
 
 .service-list li::before {
-    content: "\f00c"; /* FontAwesome Check */
+    content: "\f00c";
+    /* FontAwesome Check */
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    color: var(--primary-accent); /* Gold */
+    color: var(--primary-accent);
+    /* Gold */
     position: absolute;
     left: 0;
     top: 3px;
     font-size: 0.9rem;
+}
+
+/* ===================================== */
+/* LUXURY SERVICE PAGE TEMPLATES         */
+/* ===================================== */
+
+.services-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 40px;
+    margin-top: -60px;
+    /* Overlap effect if hero allows */
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 900px) {
+    .services-grid-wrapper {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+}
+
+/* MAIN CONTENT CARD */
+.luxury-content-card {
+    background: var(--white);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    /* Soft diffuse shadow */
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.luxury-content-card h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: var(--primary-dark);
+    /* Charcoal */
+}
+
+.luxury-content-card p {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.luxury-content-card h3 {
+    font-size: 1.6rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+    border-bottom: 3px solid var(--primary-accent);
+    /* Gold Underline */
+    display: inline-block;
+}
+
+/* SIDEBAR LUXURY CARD */
+.luxury-sidebar-card {
+    background: #fffafa;
+    /* Very subtle warm white/cream */
+    border: 2px solid var(--primary-accent);
+    /* Gold Border */
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15);
+    /* Gold tinted shadow */
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.luxury-sidebar-card:hover {
+    transform: translateY(-5px);
+}
+
+.luxury-sidebar-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-dark);
+}
+
+.luxury-sidebar-card p {
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 25px;
+}
+
+/* SIDEBAR LINKS */
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.sidebar-links li {
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 12px;
+}
+
+.sidebar-links li:last-child {
+    border-bottom: none;
+}
+
+.sidebar-links a {
+    color: var(--primary-dark);
+    font-weight: 600;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-links a::before {
+    content: "\f0da";
+    /* FontAwesome Chevron */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--primary-accent);
+    /* Gold */
+    transition: transform 0.3s ease;
+}
+
+.sidebar-links a:hover {
+    color: var(--primary-accent);
+    padding-left: 5px;
 }
